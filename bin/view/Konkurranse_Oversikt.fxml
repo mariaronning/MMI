@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="650.0" minWidth="600.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+   <children>
+      <TabPane prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="OVERSIKT">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutY="123.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+                        <TextField layoutX="114.0" layoutY="4.0" style="-fx-background-color: white;" text="HOPP-I-HAVET">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="118.0" layoutY="28.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 10km        Gjenværende dager: 10">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="116.0" layoutY="67.0" style="-fx-background-color: white;" text="TRONDHEIM-I-FARTA">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="120.0" layoutY="91.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 2km         Gjenværende dager: 4">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="119.0" layoutY="129.0" style="-fx-background-color: white;" text="KANON">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="123.0" layoutY="153.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 20km      Gjenværende dager: 30">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="120.0" layoutY="191.0" style="-fx-background-color: white;" text="BERUSET">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="124.0" layoutY="215.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 3km        Gjenværende dager: 9">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Button id="hiv" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="HIV" />
+                        <Button id="tif" layoutX="1.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="TIF" />
+                        <Button id="kanon" layoutX="1.0" layoutY="124.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="KANON" />
+                        <Button id="beruset" layoutY="186.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="BERUSET" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="NÅVÆRENDE">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
