@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApplicationController">
    <children>
       <TextField layoutX="207.0" layoutY="331.0" />
       <TextField layoutX="207.0" layoutY="410.0" />
-      <Button layoutX="208.0" layoutY="471.0" mnemonicParsing="false" text="Logg inn" />
+      <Button layoutX="208.0" layoutY="471.0" mnemonicParsing="false" onAction="#login" text="Logg inn" />
       <Label layoutX="209.0" layoutY="302.0" text="Brukernavn:" />
       <Label layoutX="207.0" layoutY="379.0" text="Passord:" />
       <Label layoutX="242.0" layoutY="225.0" text="Logg inn">

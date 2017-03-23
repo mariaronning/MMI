@@ -15,8 +15,6 @@ import model.AppController;
 public class MainApp extends Application {
 	
 
-
-
 	private AnchorPane root;
 	private AppController controller;
 	
@@ -41,7 +39,7 @@ public class MainApp extends Application {
 	public void start(Stage stage) {
 		try {
 			
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/Root.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/Login.fxml"));
 			root = (AnchorPane) loader.load();
 
 			
@@ -58,15 +56,6 @@ public class MainApp extends Application {
 		}
 		
 	}
-	
-	public void postAlert(AlertType type, String title, String content) {
-		Alert alert = new Alert(type);
-		alert.setTitle(title);
-		alert.setContentText(content);
-		
-		alert.showAndWait();
-	}
-	
 	
 	
 	public static void main(String[] args) {

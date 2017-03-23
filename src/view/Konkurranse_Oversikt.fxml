@@ -14,13 +14,47 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="650.0" minWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApplicationController">
    <children>
-      <TabPane prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab text="OVERSIKT">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+      <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="48.0" layoutY="705.0" onMouseClicked="#competition" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/trophy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="196.0" layoutY="795.0" onMouseClicked="#activity" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/activity.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="346.0" layoutY="795.0" onMouseClicked="#bluetooth" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="194.0">
+         <image>
+            <Image url="@../images/bluetooth.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="507.0" layoutY="705.0" onMouseClicked="#steps" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/steps.png" />
+         </image></ImageView>
+      <Label layoutX="38.0" layoutY="769.0" text="Konkurranse" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="198.0" layoutY="765.0" text="Aktivitet" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="343.0" layoutY="765.0" text="Bluetooth" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="491.0" layoutY="769.0" text="Registrer" AnchorPane.bottomAnchor="10.0" />
+      <Line endX="500.0" layoutX="100.0" layoutY="775.0" startX="-100.0" stroke="#686868" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="699.0" />
+      <Line endX="50.0" layoutX="150.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="101.5" />
+      <Line endX="50.0" layoutX="300.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="250.5" AnchorPane.rightAnchor="248.5" />
+      <Line endX="50.0" layoutX="450.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" />
+      <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="526.0" layoutY="14.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="101.0" layoutY="73.0" startX="-100.0" stroke="#686868" />
+      <Label fx:id="title" layoutX="253.0" layoutY="29.0" />
+      <TabPane layoutY="75.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="OVERSIKT">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="527.0" prefWidth="600.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
@@ -30,19 +64,9 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="57.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
-                        <TextField layoutX="114.0" layoutY="4.0" style="-fx-background-color: white;" text="HOPP-I-HAVET">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </TextField>
                         <TextField layoutX="118.0" layoutY="28.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 10km        Gjenværende dager: 10">
                            <font>
                               <Font size="12.0" />
-                           </font>
-                        </TextField>
-                        <TextField layoutX="116.0" layoutY="67.0" style="-fx-background-color: white;" text="TRONDHEIM-I-FARTA">
-                           <font>
-                              <Font size="18.0" />
                            </font>
                         </TextField>
                         <TextField layoutX="120.0" layoutY="91.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 2km         Gjenværende dager: 4">
@@ -50,19 +74,9 @@
                               <Font size="12.0" />
                            </font>
                         </TextField>
-                        <TextField layoutX="119.0" layoutY="129.0" style="-fx-background-color: white;" text="KANON">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </TextField>
                         <TextField layoutX="123.0" layoutY="153.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 20km      Gjenværende dager: 30">
                            <font>
                               <Font size="12.0" />
-                           </font>
-                        </TextField>
-                        <TextField layoutX="120.0" layoutY="191.0" style="-fx-background-color: white;" text="BERUSET">
-                           <font>
-                              <Font size="18.0" />
                            </font>
                         </TextField>
                         <TextField layoutX="124.0" layoutY="215.0" prefHeight="27.0" prefWidth="291.0" style="-fx-background-color: white;" text="Distanse: 3km        Gjenværende dager: 9">
@@ -70,10 +84,10 @@
                               <Font size="12.0" />
                            </font>
                         </TextField>
-                        <Button id="hiv" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="HIV" />
-                        <Button id="tif" layoutX="1.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="TIF" />
-                        <Button id="kanon" layoutX="1.0" layoutY="124.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="KANON" />
-                        <Button id="beruset" layoutY="186.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="BERUSET" />
+                        <Button id="hiv" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#comp1" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="HIV" />
+                        <Button id="tif" layoutX="1.0" layoutY="62.0" mnemonicParsing="false" onAction="#comp2" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="TIF" />
+                        <Button id="kanon" layoutX="1.0" layoutY="124.0" mnemonicParsing="false" onAction="#comp3" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="KANON" />
+                        <Button id="beruset" layoutY="186.0" mnemonicParsing="false" onAction="#comp4" opacity="0.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;" text="BERUSET" />
                         <Label layoutX="69.0" layoutY="24.0" text="3" textFill="WHITE" />
                         <Label layoutX="70.0" layoutY="85.0" text="1" textFill="WHITE" />
                         <Label layoutX="70.0" layoutY="146.0" text="2" textFill="WHITE" />
@@ -118,13 +132,33 @@
                               <Font size="9.0" />
                            </font>
                         </Label>
+                        <Label layoutX="124.0" layoutY="11.0" text="HOPP-I-HAVET">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="124.0" layoutY="73.0" text="TRONDHEIM-I-FARTA">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="124.0" layoutY="133.0" text="KANON">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="124.0" layoutY="192.0" text="BERUSET">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="NÅVÆRENDE">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               </content>
+            </Tab>
+            <Tab text="NÅVÆRENDE">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Label layoutX="172.0" layoutY="30.0" text="HOPP-I-HAVET">
                            <font>
@@ -238,19 +272,25 @@
                         <Label layoutX="345.0" layoutY="276.0" prefHeight="17.0" prefWidth="103.0" text="- Totalt: 2080 " />
                         <Label layoutX="345.0" layoutY="298.0" prefHeight="17.0" prefWidth="184.0" text="- Gjennomsnitt per dag: 290" />
                         <CheckBox layoutX="133.0" layoutY="485.0" mnemonicParsing="false" text="Anonym" />
-                        <Button layoutX="130.0" layoutY="404.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="59.0" text="Karl" />
-                        <Button layoutX="189.0" layoutY="404.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="58.0" text="Tore" />
-                        <Button layoutX="247.0" layoutY="404.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="58.0" text="Meg" />
-                        <Button layoutX="305.0" layoutY="404.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="58.0" text="Sara" />
-                        <Button layoutX="132.0" layoutY="520.0" mnemonicParsing="false" text="Meld av" />
+                        <Button layoutX="130.0" layoutY="404.0" mnemonicParsing="false" onAction="#profile" prefHeight="27.0" prefWidth="59.0" text="Karl" />
+                        <Button layoutX="189.0" layoutY="404.0" mnemonicParsing="false" onAction="#profile" prefHeight="19.0" prefWidth="58.0" text="Tore" />
+                        <Button layoutX="247.0" layoutY="404.0" mnemonicParsing="false" onAction="#profile" prefHeight="19.0" prefWidth="58.0" text="Meg" />
+                        <Button layoutX="305.0" layoutY="404.0" mnemonicParsing="false" onAction="#profile" prefHeight="19.0" prefWidth="58.0" text="Sara" />
+                        <Button layoutX="132.0" layoutY="520.0" mnemonicParsing="false" onAction="#competition" text="Meld av" />
                         <Label layoutX="129.0" layoutY="74.0" text="Distanse: 500km" />
                         <Label layoutX="290.0" layoutY="74.0" text="Gjenværende dager:  10" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="24.0" layoutX="136.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                         <Label layoutX="144.0" layoutY="40.0" text="3" textFill="WHITE" />
-                     </children></AnchorPane>
-            </content>
-          </Tab>
-        </tabs>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
       </TabPane>
+      <Label layoutX="199.0" layoutY="14.0" text="Konkurranser">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -4,98 +4,138 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="650.0" maxWidth="600.0" minHeight="650.0" minWidth="600.0" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApplicationController">
    <children>
-      <Label layoutX="52.0" layoutY="110.0" text="Navn:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="110.0">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <Label layoutX="53.0" layoutY="155.0" text="Alder:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="150.0">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <Label layoutX="50.0" layoutY="253.0" text="Totalt antall skritt:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="230.0">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <Label layoutX="45.0" layoutY="307.0" text="Bemerkelser:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="307.0">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="388.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="48.0" layoutY="705.0" onMouseClicked="#competition" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/trophy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="196.0" layoutY="795.0" onMouseClicked="#activity" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/activity.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="346.0" layoutY="795.0" onMouseClicked="#bluetooth" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="194.0">
+         <image>
+            <Image url="@../images/bluetooth.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="507.0" layoutY="705.0" onMouseClicked="#steps" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/steps.png" />
+         </image></ImageView>
+      <Label layoutX="38.0" layoutY="769.0" text="Konkurranse" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="198.0" layoutY="765.0" text="Aktivitet" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="343.0" layoutY="765.0" text="Bluetooth" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="491.0" layoutY="769.0" text="Registrer" AnchorPane.bottomAnchor="10.0" />
+      <Line endX="500.0" layoutX="100.0" layoutY="775.0" startX="-100.0" stroke="#686868" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="699.0" />
+      <Line endX="50.0" layoutX="150.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="101.5" />
+      <Line endX="50.0" layoutX="300.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="250.5" AnchorPane.rightAnchor="248.5" />
+      <Line endX="50.0" layoutX="450.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" />
+      <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="526.0" layoutY="14.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/profile.png" />
          </image>
       </ImageView>
-      <Label layoutX="133.0" layoutY="117.0" text="Kari Nordmann">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="138.0" layoutY="153.0" text="25">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="273.0" layoutY="233.0" text="13580">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="58.0" layoutY="205.0" text="Nivå:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="190.0">
+      <Line endX="500.0" layoutX="101.0" layoutY="73.0" startX="-100.0" stroke="#686868" />
+      <Label fx:id="title" layoutX="253.0" layoutY="29.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="401.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="62.0" layoutY="120.0" text="Navn:">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="144.0" layoutY="193.0" text="2">
+      <Label layoutX="63.0" layoutY="165.0" text="Alder:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="215.0" text="Nivå:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="263.0" text="Totalt antall skritt:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="317.0" text="Bemerkelser:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="127.0" text="Kari Nordmann">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <ImageView fitHeight="119.0" fitWidth="115.0" layoutX="48.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+      <Label layoutX="148.0" layoutY="168.0" text="25">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="218.0" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="266.0" text="13580">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="119.0" fitWidth="115.0" layoutX="58.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/star.png" />
          </image>
       </ImageView>
-      <Label layoutX="163.0" layoutY="419.0" text="12/100" />
-      <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="45.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+      <Label layoutX="173.0" layoutY="458.0" text="12/100" />
+      <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="50.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/trophy.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="418.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+      <Label layoutX="104.0" layoutY="573.0" text="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="618.0" text="3/100" />
+      <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="250.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/trophy.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="240.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="433.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/trophy.png" />
          </image>
       </ImageView>
-      <Label layoutX="472.0" layoutY="513.0" text="1">
+      <Label layoutX="304.0" layoutY="573.0" text="2">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="294.0" layoutY="513.0" text="2">
+      <Label layoutX="350.0" layoutY="618.0" text="1/100" />
+      <Label layoutX="532.0" layoutY="618.0" text="0/100" />
+      <Label layoutX="486.0" layoutY="573.0" text="1">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="99.0" layoutY="513.0" text="3">
+      <Label layoutX="239.0" layoutY="14.0" text="Min side">
          <font>
-            <Font size="20.0" />
+            <Font size="35.0" />
          </font>
       </Label>
-      <Label layoutX="147.0" layoutY="557.0" text="3/100" />
-      <Label layoutX="340.0" layoutY="557.0" text="1/100" />
-      <Label layoutX="518.0" layoutY="557.0" text="0/100" />
    </children>
 </AnchorPane>

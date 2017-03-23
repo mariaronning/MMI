@@ -7,25 +7,60 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="650.0" maxWidth="600.0" minHeight="650.0" minWidth="600.0" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApplicationController">
    <children>
-      <ImageView fitHeight="321.0" fitWidth="207.0" layoutX="193.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="48.0" layoutY="705.0" onMouseClicked="#competition" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
          <image>
-            <Image url="@../images/kart.png" />
+            <Image url="@../images/trophy.png" />
          </image>
       </ImageView>
-      <Circle fill="#ff1f1f" layoutX="235.0" layoutY="352.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <Circle fill="#ff1f1f" layoutX="257.0" layoutY="347.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <Button layoutX="208.0" layoutY="537.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="108.0" text="Meld på" />
-      <CheckBox layoutX="215.0" layoutY="494.0" mnemonicParsing="false" text="Anonym" />
-      <Label layoutX="171.0" layoutY="54.0" text="TRONDHEIM-I-FARTA">
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="196.0" layoutY="795.0" onMouseClicked="#activity" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/activity.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="346.0" layoutY="795.0" onMouseClicked="#bluetooth" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="194.0">
+         <image>
+            <Image url="@../images/bluetooth.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="507.0" layoutY="705.0" onMouseClicked="#steps" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/steps.png" />
+         </image></ImageView>
+      <Label layoutX="38.0" layoutY="769.0" text="Konkurranse" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="198.0" layoutY="765.0" text="Aktivitet" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="343.0" layoutY="765.0" text="Bluetooth" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="491.0" layoutY="769.0" text="Registrer" AnchorPane.bottomAnchor="10.0" />
+      <Line endX="500.0" layoutX="100.0" layoutY="800.0" startX="-100.0" stroke="#686868" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="699.0" />
+      <Line endX="50.0" layoutX="150.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="101.5" />
+      <Line endX="50.0" layoutX="300.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="250.5" AnchorPane.rightAnchor="248.5" />
+      <Line endX="50.0" layoutX="450.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" />
+      <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="526.0" layoutY="14.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="101.0" layoutY="73.0" startX="-100.0" stroke="#686868" />
+      <Label fx:id="title" layoutX="253.0" layoutY="29.0" />
+      <Label layoutX="156.0" layoutY="134.0" text="TRONDHEIM-I-FARTA">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="149.0" layoutY="111.0" text="Distanse: 2 km" />
-      <Label layoutX="305.0" layoutY="111.0" text="Gjenværende dager: 4" />
+      <Label layoutX="153.0" layoutY="179.0" text="Distanse:  2 km" />
+      <Label layoutX="309.0" layoutY="179.0" text="Gjenværende dager: 4" />
+      <ImageView fitHeight="321.0" fitWidth="207.0" layoutX="202.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kart.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#ff1f1f" layoutX="261.0" layoutY="434.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#ff1f1f" layoutX="253.0" layoutY="424.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <CheckBox layoutX="219.0" layoutY="571.0" mnemonicParsing="false" text="Anonym" />
+      <Button layoutX="219.0" layoutY="611.0" mnemonicParsing="false" onAction="#competition" prefHeight="31.0" prefWidth="108.0" text="Meld på" />
    </children>
 </AnchorPane>

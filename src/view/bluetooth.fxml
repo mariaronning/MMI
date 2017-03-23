@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="650.0" maxWidth="600.0" minHeight="650.0" minWidth="600.0" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApplicationController">
    <children>
-      <ImageView fitHeight="557.0" fitWidth="498.0" layoutX="53.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="48.0" layoutY="705.0" onMouseClicked="#competition" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/trophy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="196.0" layoutY="795.0" onMouseClicked="#activity" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/activity.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="346.0" layoutY="795.0" onMouseClicked="#bluetooth" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="194.0">
+         <image>
+            <Image url="@../images/bluetooth.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="150.0" layoutX="507.0" layoutY="705.0" onMouseClicked="#steps" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+         <image>
+            <Image url="@../images/steps.png" />
+         </image></ImageView>
+      <Label layoutX="38.0" layoutY="769.0" text="Konkurranse" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="198.0" layoutY="765.0" text="Aktivitet" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="343.0" layoutY="765.0" text="Bluetooth" AnchorPane.bottomAnchor="10.0" />
+      <Label layoutX="491.0" layoutY="769.0" text="Registrer" AnchorPane.bottomAnchor="10.0" />
+      <Line endX="500.0" layoutX="100.0" layoutY="775.0" startX="-100.0" stroke="#686868" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="699.0" />
+      <Line endX="50.0" layoutX="150.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="101.5" />
+      <Line endX="50.0" layoutX="300.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="250.5" AnchorPane.rightAnchor="248.5" />
+      <Line endX="50.0" layoutX="450.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" />
+      <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="526.0" layoutY="14.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="101.0" layoutY="73.0" startX="-100.0" stroke="#686868" />
+      <Label fx:id="title" layoutX="253.0" layoutY="29.0" />
+      <ImageView fitHeight="557.0" fitWidth="498.0" layoutX="70.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/bluetoothConnect.png" />
          </image>
       </ImageView>
+      <Label layoutX="190.0" layoutY="14.0" text="Registrer skritt">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
