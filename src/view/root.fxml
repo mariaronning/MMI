@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="48.0" layoutY="705.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
+      <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="48.0" layoutY="705.0" onMouseClicked="#competition" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0">
          <image>
             <Image url="@../images/trophy.png" />
          </image>
@@ -35,5 +35,12 @@
       <Line endX="50.0" layoutX="150.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="101.5" />
       <Line endX="50.0" layoutX="300.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" AnchorPane.leftAnchor="250.5" AnchorPane.rightAnchor="248.5" />
       <Line endX="50.0" layoutX="450.0" layoutY="750.0" rotate="90.0" startX="-50.0" stroke="#686868" />
+      <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="526.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="101.0" layoutY="73.0" startX="-100.0" stroke="#686868" />
+      <Label fx:id="title" layoutX="253.0" layoutY="29.0" />
    </children>
 </AnchorPane>

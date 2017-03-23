@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="650.0" maxWidth="600.0" minHeight="650.0" minWidth="600.0" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+   <children>
+      <Text layoutX="170.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regsitrer antall skritt:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField layoutX="83.0" layoutY="216.0" prefHeight="41.0" prefWidth="417.0" promptText="Antall skritt" />
+      <Button layoutX="83.0" layoutY="265.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="417.0" style="-fx-background-color: #81aff9;" text="Registrer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
